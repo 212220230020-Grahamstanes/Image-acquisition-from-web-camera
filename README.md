@@ -27,8 +27,8 @@ End the program and close the output image windows.
 
 ## PROGRAM:
 ```
-### Developed By: Y Chethan
-### Register No: 212220230008
+### Developed By: Graham Stanes
+### Register No: 212220230020
 
 ## i) Write the frame as JPG file
 
@@ -36,7 +36,7 @@ import cv2
 image = cv2.VideoCapture(0)
 while(True):
     ret,frame = image.read()
-    cv2.imwrite("NewPicture.jpg",frame)
+    cv2.imwrite("Capture.jpg",frame)
     result = False
 image.release()
 
@@ -45,7 +45,7 @@ image.release()
 cap=cv2.VideoCapture(0)
 while True:
     ret,frame=cap.read()
-    cv2.imshow('frame', frame)
+    cv2.imshow('212220230020', frame)
     if cv2.waitKey(1) == ord('q'):
         break
 cap.release()
@@ -94,14 +94,16 @@ cv2.destroyAllWindows()
 ## OUTPUT:
 
 ### i) Write the frame as JPG image
-![](images/write.png)
-![](images/capture.png)
+![img1](https://user-images.githubusercontent.com/75235150/165328546-9894f26a-c514-4175-a42e-ea4b9fb0f8a7.jpg)
+
 ### ii) Display the video
-![](images/videocapture.png)
+![img2](https://user-images.githubusercontent.com/75235150/165328577-d5d8fe94-d441-42c2-884d-772f828ae726.jpg)
+
 ### iii) Display the video by resizing the window
-![](images/resize.png)
+![img3](https://user-images.githubusercontent.com/75235150/165328647-893c59cf-131f-4f6b-9c12-842303e382db.jpg)
+
 ### iv) Rotate and display the video
-![](images/rotate.png)
+![Uploading img4.jpg…]()
 
 ## RESULT:
 Thus, the image is accessed from webcamera and displayed using openCV.
